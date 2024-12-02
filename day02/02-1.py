@@ -14,8 +14,8 @@ def main() -> None:
             increasing = True
 
         for i in range(len(line) - 1):
-            num1 = int(line[i]);
-            num2 = int(line[i + 1]);
+            num1 = int(line[i])
+            num2 = int(line[i + 1])
             diff = abs(num1 - num2)
 
             if diff < 1 or diff > 3:
