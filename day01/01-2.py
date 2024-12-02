@@ -1,5 +1,5 @@
 def main() -> None:
-    with open("01-input.txt", "r") as file:
+    with open("day01/01-input.txt", "r") as file:
         data = file.readlines()
         data = [line.rstrip() for line in data]
 
