@@ -30,7 +30,7 @@ def main() -> None:
                 if increasing and num2 < num1:
                     correct = False
                     break
-                elif not increasing and num2 > num1:
+                if not increasing and num2 > num1:
                     correct = False
                     break
 
