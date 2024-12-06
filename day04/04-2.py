@@ -1,4 +1,4 @@
-def main() -> None:
+def main():
     with open("day04/04-input.txt", "r") as file:
         data = file.readlines()
         data = [line.rstrip() for line in data]
@@ -19,7 +19,7 @@ def main() -> None:
 
     
 
-def analyzer(data: list[list], x, y):
+def analyzer(data, x, y):
     if data[y][x] != "A":
         return 0
 

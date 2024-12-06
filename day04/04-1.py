@@ -1,4 +1,4 @@
-def main() -> None:
+def main():
     with open("day04/04-input.txt", "r") as file:
         data = file.readlines()
         data = [line.rstrip() for line in data]
@@ -44,7 +44,7 @@ def main() -> None:
 
     
 
-def analyzer(data: list[list], x, y, dx, dy):
+def analyzer(data, x, y, dx, dy):
     count = 0
     hit = 0
 

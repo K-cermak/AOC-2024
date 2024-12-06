@@ -1,4 +1,4 @@
-def main() -> None:
+def main():
     with open("day02/02-input.txt", "r") as file:
         data = file.readlines()
         data = [line.rstrip() for line in data]

@@ -1,6 +1,6 @@
 from collections import defaultdict, deque
 
-def main() -> None:
+def main():
     with open("day05/05-input.txt", "r") as file:
         data = file.readlines()
         data = [line.rstrip() for line in data]

@@ -1,6 +1,6 @@
 import re
 
-def main() -> None:
+def main():
     with open("day03/03-input.txt", "r") as file:
         data = file.readlines()
         data = [line.rstrip() for line in data]
