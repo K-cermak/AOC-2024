@@ -22,17 +22,17 @@ def main() -> None:
                 sublist.append(splitted[i])
             updates.append(sublist)
 
-    count = 0
 
+    count = 0
 
     for update in updates:
         before_elements = []
         for rule in update:
-            pre = set()
-            get_before(updates_rules, rule, pre)
-            before_elements.append(pre)
+            pre_items = set()
+            get_before(updates_rules, rule, pre_items)
+            before_elements.append(pre_items)
 
-        if (not is_correct(update, before_elements)):
+        if not is_correct(update, before_elements):
             topological_sort(update, updates_rules)
             count += int(update[(len(update) // 2)])
 
@@ -81,8 +81,6 @@ def topological_sort(update, updates_rules):
             if in_degree[neighbor] == 0:
                 zero_in_degree.append(neighbor)
 
-
-    
 
 if __name__ == "__main__":
     main()

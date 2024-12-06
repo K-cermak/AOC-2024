@@ -28,12 +28,11 @@ def analyzer(data: list[list], x, y):
         (data[y + 1][x + 1] == "S" and data[y - 1][x - 1] == "M")):
             return 1
 
-
     if ((data[y + 1][x - 1] == "S" and data[y - 1][x + 1] == "M")
         and
         (data[y + 1][x + 1] == "S" and data[y - 1][x - 1] == "M")):
             return 1
-    
+
     if ((data[y + 1][x - 1] == "M" and data[y - 1][x + 1] == "S")
         and
         (data[y + 1][x + 1] == "M" and data[y - 1][x - 1] == "S")):

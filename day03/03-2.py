@@ -19,10 +19,7 @@ def main() -> None:
             elif allowed:
                 m = m[4:-1]
                 m = m.split(",")
-                num1 = int(m[0])
-                num2 = int(m[1])
-
-                count += num1 * num2
+                count += int(m[0]) * int(m[1])
 
     print(count)
 
