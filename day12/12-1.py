@@ -20,7 +20,7 @@ def analyze(data, x, y, already_counted):
     positions = set()
 
     rec_neighbours(data, x, y, positions, data[y][x])
-    diff_neighbour = 0;
+    diff_neighbour = 0
 
     for pos in positions:
         already_counted[pos] = True
