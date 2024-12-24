@@ -54,9 +54,6 @@ def process(a_button, b_button, f_dest):
         return 3 * a + b
 
     return None
-    
-            
-
 
 if __name__ == "__main__":
     main()
